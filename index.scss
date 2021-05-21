@@ -7,20 +7,47 @@
   background-color: black;
 }
 
-.header {
-  height: 8vh;
-  background-color: rgb(27, 27, 27);
-}
-
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 70vh;
+  flex-direction: column;
 
   h1 {
-    font-size: 100px;
+    font-size: 90px;
     text-align: center;
+  }
+
+  .callToAction {
+    width: 30%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 120px;
+      outline: none;
+      border: 1px solid white;
+      cursor: pointer;
+      transition: 300ms;
+      text-decoration: none;
+    }
+
+    a:hover {
+      transform: translateY(-5px);
+      border: 1px solid green;
+    }
+
+    .workingOn {
+      background-color: rgb(24, 24, 24);
+      border-radius: 10px;
+    }
   }
 }
 
@@ -30,16 +57,22 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 10px;
+    padding-bottom: 30px;
 
     .project {
       display: flex;
       flex-direction: column;
       background-position: center;
-      background-size: contain;
-      width: 600px;
-      height: 303px;
-      margin-right: 10px;
-      margin-bottom: 10px;
+      background-size: cover;
+      width: 700px;
+      height: 403px;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      transition: 300ms;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
 
       .project__information {
         opacity: 0;
@@ -50,7 +83,6 @@
 
         &:hover {
           opacity: 1;
-          border: 1px solid white;
         }
         .project__title {
           display: flex;
@@ -73,5 +105,156 @@
         }
       }
     }
+  }
+}
+
+.spotlightTitle {
+  height: 35vh;
+  font-size: 60px;
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 31%,
+    rgba(15, 78, 87, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 31%,
+    rgba(15, 78, 87, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 31%,
+    rgba(15, 78, 87, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#0f4e57",GradientType=1);
+
+  h1 {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.spotlightMain {
+  p,
+  h3 {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  p {
+    color: rgb(194, 194, 194);
+    line-height: 2;
+  }
+
+  .comparisonWriting {
+    padding: 0 2%;
+    padding-bottom: 50px;
+
+    h3 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .informationContainer {
+    display: flex;
+
+    .informationContainer__left {
+      flex: 1;
+      padding: 2%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .informationContainer__right {
+      flex: 1;
+      padding: 2%;
+
+      .informationContainer__title {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: white;
+        line-height: 1;
+      }
+    }
+  }
+
+  .nextSteps {
+    padding: 0 2%;
+    padding-bottom: 30px;
+
+    .nextSteps__title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: white;
+    }
+    .stepContainer {
+      display: flex;
+      flex-wrap: wrap;
+
+      .step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24%;
+        height: 60px;
+        background-color: rgb(22, 22, 22);
+        margin-right: 10px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        text-align: center;
+
+        p {
+          background-color: rgba(0, 0, 0, 0);
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .spotlightTitle {
+    font-size: 30px;
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .informationContainer {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .informationContainer__left {
+    padding: 0% 2% !important;
+  }
+
+  .comparisonContainer {
+    flex-direction: column;
+  }
+
+  .step {
+    width: 47% !important;
+    padding: 0 2%;
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .informationContainer__title {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .spotlightTitle {
+    font-size: 20px;
   }
 }
