@@ -27,27 +27,13 @@
       <div class="comparisonWriting">
         <h3>The Idea...</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-          similique omnis fuga hic corrupti consectetur aperiam esse tempora,
-          dolorum asperiores dolor adipisci rerum odit iure accusantium ipsam
-          voluptatibus vel sed vero maxime neque earum! Voluptas eum error sint
-          optio laborum soluta provident voluptates sed odio reiciendis vel
-          quaerat laudantium possimus nemo iure earum eos temporibus aperiam,
-          totam rerum! Eveniet blanditiis similique alias, at eaque
-          reprehenderit. Quidem exercitationem necessitatibus quae ad facere,
-          nihil placeat explicabo illum omnis. Placeat saepe et, eos, adipisci
-          expedita praesentium voluptatem tempora, nostrum exercitationem
-          aperiam consequatur iure provident earum hic sed alias repudiandae
-          ipsam. Eum, in nihil!
-        </p>
-      </div>
-      <div class="comparisonWriting">
-        <h3>Lessons from v1</h3>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-          similique omnis fuga hic corrupti consectetur aperiam esse tempora,
-          dolorum asperiores dolor adipisci rerum odit iure accusantium ipsam
-          voluptatibus vel sed vero maxime neque earum! Voluptas eum error sint
+          After creating the first 'Sounds of Serenity' website (view here) it
+          worked as intended, but it was not coded with scalability in mind, nor
+          did it look how I envisioned it. I took it upon myself to completely
+          redesign the app, and embarked on transitioning it to a full-stack
+          application. The end goal of the website is for users to be able to
+          log in safely to their account, create play lists of their favorite
+          tracks and listen to music to help with the meditation practice.
         </p>
       </div>
       <div class="informationContainer" data-aos="fade-up">
@@ -57,11 +43,13 @@
         <div class="informationContainer__right">
           <p class="informationContainer__title">Main Page</p>
           <p class="informationContainer__desc">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
-            adipisci aperiam ipsam iure, aliquid suscipit blanditiis minus dicta
-            atque ullam magnam ad dolorum aliquam! Sit, perspiciatis vitae
-            beatae suscipit quibusdam eaque optio aperiam itaque explicabo!
-            Veritatis corporis perferendis tempore distinctio eveniet
+            As you can see from the comparison on the left, the new site is much
+            more colorful and has a different user interface. When more tracks
+            are added on the server, the 'recently added' and 'collection'
+            sections are automatically updated with the four newest to not
+            overwhelm the user when they log in. As I develop the app to contain
+            more music, I will add a new page which will contain all the
+            collections which will be searched for by the user.
           </p>
         </div>
       </div>
@@ -72,10 +60,12 @@
         <div class="informationContainer__right">
           <p class="informationContainer__title">Login Page</p>
           <p class="informationContainer__desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            architecto animi sint nihil saepe, itaque perspiciatis neque? Amet,
-            pariatur sunt quam est ipsa officiis animi dolores debitis?
-            Sapiente, eius veritatis!
+            At the moment, a user can make an account, and their information is
+            stored on a Mongo database. The next step of this process is to
+            allow a user to log in safely and be redirected to the main page.
+            For this functionality, I am going to use NPM packages such as
+            Hapi/joi, for the validation, bcrypt, to encrypt passwords and JWT
+            to monitor if the user is allowed to access certain pages.
           </p>
         </div>
       </div>
@@ -86,10 +76,10 @@
         <div class="informationContainer__right">
           <p class="informationContainer__title">Player Page</p>
           <p class="informationContainer__desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            architecto animi sint nihil saepe, itaque perspiciatis neque? Amet,
-            pariatur sunt quam est ipsa officiis animi dolores debitis?
-            Sapiente, eius veritatis!
+            When a user clicks on a track, they are presented with a player page
+            with simple music controls. The background changes dependent on the
+            track image seen previously on the main page and it is easy to
+            navigate back to the main page via the upward arrow.
           </p>
         </div>
       </div>
@@ -103,10 +93,11 @@
         <div class="informationContainer__right">
           <p class="informationContainer__title">Collection Page</p>
           <p class="informationContainer__desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            architecto animi sint nihil saepe, itaque perspiciatis neque? Amet,
-            pariatur sunt quam est ipsa officiis animi dolores debitis?
-            Sapiente, eius veritatis!
+            The collection page allows users to pick a certain 'mood' to listen
+            to. When a collection is chosen they are given the option to listen
+            any track within that specific collection and are directed to the
+            player page upon choosing. The User Experience flow is very simple,
+            main page => collections => player
           </p>
         </div>
       </div>
@@ -117,10 +108,9 @@
         <div class="informationContainer__right">
           <p class="informationContainer__title">Mobile Responsive</p>
           <p class="informationContainer__desc">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            architecto animi sint nihil saepe, itaque perspiciatis neque? Amet,
-            pariatur sunt quam est ipsa officiis animi dolores debitis?
-            Sapiente, eius veritatis!
+            I can envisage most users using the app on the mobile devices so it
+            was extremely important to make sure the app was initially designed
+            on mobile devices and translated to desktop.
           </p>
         </div>
       </div>
@@ -171,7 +161,7 @@
           <div class="step"><p>Users can edit their account</p></div>
           <div class="step"><p>Implement Redux</p></div>
           <div class="step"><p>Log in/out functionality</p></div>
-          <div class="step"><p>Encrpt passwords</p></div>
+          <div class="step"><p>Encrypt passwords</p></div>
           <div class="step"><p>Liked tracks</p></div>
           <div class="step"><p>Accessibility features</p></div>
         </div>

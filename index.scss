@@ -70,6 +70,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
   height: 100vh;
   flex-direction: column;
   background-image: url('./src/ACCode-1080p-background.jpg.png');
@@ -105,12 +106,16 @@ body {
       transform: translateY(-5px);
     }
 
+    .workingOnProjects {
+      background-color: rgb(1, 116, 136);
+    }
+
     .workingOn {
       background-color: black;
     }
 
     .gitHub {
-      background-color: rgb(54, 54, 54);
+      background-color: rgb(0, 0, 0);
     }
   }
 }
@@ -136,7 +141,6 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 10px;
-    padding-bottom: 30px;
 
     .project {
       display: flex;
@@ -297,6 +301,21 @@ body {
   padding: 25px 0px;
   border-bottom: 1px solid rgb(31, 31, 31);
 
+  .informationContainer__technologies {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    .informationContainer__techs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: grey;
+      width: 100px;
+      border-radius: 25px;
+      margin-right: 10px;
+    }
+  }
+
   .informationContainer__links {
     margin-top: 20px;
     display: flex;
@@ -321,7 +340,8 @@ body {
       }
 
       .caseStudy {
-        border: 2px solid green;
+        background-color: rgb(1, 116, 136);
+        border: none;
       }
     }
   }
@@ -349,6 +369,7 @@ body {
 
     .informationContainer__desc {
       color: rgb(158, 158, 158);
+      padding: 10px 0;
     }
   }
 }
