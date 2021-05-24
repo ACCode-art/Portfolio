@@ -200,23 +200,10 @@ body {
   padding: 8vh 2% 0 2%;
   display: flex;
   align-items: center;
-  background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 31%,
-    rgba(15, 78, 87, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 31%,
-    rgba(15, 78, 87, 1) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 31%,
-    rgba(15, 78, 87, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#0f4e57",GradientType=1);
+  background-image: url('./src/sos-spotlight.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 
   h1 {
     background-color: rgba(255, 255, 255, 0);
