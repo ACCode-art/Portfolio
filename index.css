@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
 * {
   color: white;
   padding: 0;
@@ -5,7 +6,61 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+}
+
+body {
   background-color: black;
+}
+
+.header {
+  height: 8vh;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  padding: 0 2%;
+  border-bottom: 1px solid #202020;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__left {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__left a img {
+  width: 50px;
+  height: 50px;
+}
+
+.header .header__right {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
 }
 
 .hero {
@@ -18,7 +73,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 70vh;
+  height: 92vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -57,7 +112,6 @@
   height: 50px;
   width: 120px;
   outline: none;
-  border: 1px solid white;
   cursor: pointer;
   -webkit-transition: 300ms;
   transition: 300ms;
@@ -67,12 +121,30 @@
 .hero .callToAction a:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-  border: 1px solid green;
 }
 
 .hero .callToAction .workingOn {
-  background-color: #181818;
   border-radius: 10px;
+  border: 1px solid white;
+}
+
+.main .spotlight {
+  padding: 0 2%;
+  margin-bottom: 50px;
+}
+
+.main .projects__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 20vh;
+  font-size: 25px;
 }
 
 .main .mainContainer {
@@ -104,6 +176,7 @@
   margin-bottom: 30px;
   -webkit-transition: 300ms;
   transition: 300ms;
+  border: 1px solid #2f2f2f;
 }
 
 .main .mainContainer .project:hover {
@@ -139,6 +212,7 @@
 
 .main .mainContainer .project .project__information .project__desc {
   height: 60%;
+  color: #c5c5c5;
   padding: 0 20px;
 }
 
@@ -156,9 +230,10 @@
 }
 
 .spotlightTitle {
-  height: 35vh;
-  font-size: 60px;
-  padding: 0 2%;
+  height: 55vh;
+  margin-bottom: 30px;
+  font-size: 80px;
+  padding: 8vh 2% 0 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,6 +248,8 @@
 
 .spotlightTitle h1 {
   background-color: rgba(255, 255, 255, 0);
+  font-family: 'Cookie', cursive;
+  font-weight: 100;
 }
 
 .spotlightMain p,
@@ -180,57 +257,37 @@
   background-color: rgba(0, 0, 0, 0);
 }
 
-.spotlightMain p {
-  color: #c2c2c2;
-  line-height: 2;
-}
-
-.spotlightMain .comparisonWriting {
-  padding: 0 2%;
-  padding-bottom: 50px;
-}
-
-.spotlightMain .comparisonWriting h3 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.spotlightMain .informationContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.spotlightMain .informationContainer .informationContainer__left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 2%;
-}
-
-.spotlightMain .informationContainer .informationContainer__left img {
-  width: 100%;
-  height: 100%;
-}
-
-.spotlightMain .informationContainer .informationContainer__right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 2%;
-}
-
-.spotlightMain .informationContainer .informationContainer__right .informationContainer__title {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: white;
-  line-height: 1;
-}
-
 .spotlightMain .nextSteps {
   padding: 0 2%;
   padding-bottom: 30px;
+}
+
+.spotlightMain .nextSteps p {
+  color: white;
+}
+
+.spotlightMain .nextSteps .tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24%;
+  height: 60px;
+  background-color: #161616;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.spotlightMain .nextSteps .tech img {
+  width: 25px;
+  margin-left: 10px;
 }
 
 .spotlightMain .nextSteps .nextSteps__title {
@@ -267,9 +324,91 @@
   text-align: center;
 }
 
-.spotlightMain .nextSteps .stepContainer .step p {
-  background-color: rgba(0, 0, 0, 0);
+.spotlightMain p {
+  color: #c2c2c2;
+  line-height: 2;
+}
+
+.spotlightMain .comparisonWriting {
+  padding: 0 2%;
+  margin-bottom: 20px;
+}
+
+.spotlightMain .comparisonWriting h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.informationContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 0px;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+.informationContainer .informationContainer__links {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.informationContainer .informationContainer__links a {
+  text-decoration: none;
+}
+
+.informationContainer .informationContainer__links a .informationContainer__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 120px;
+  height: 40px;
+  border: 1px solid white;
+  margin-right: 10px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.informationContainer .informationContainer__links a .informationContainer__link:hover {
+  opacity: 0.7;
+}
+
+.informationContainer .informationContainer__links a .caseStudy {
+  border: 2px solid green;
+}
+
+.informationContainer .informationContainer__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2%;
+}
+
+.informationContainer .informationContainer__left img {
+  width: 100%;
+  height: 100%;
+}
+
+.informationContainer .informationContainer__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2%;
+}
+
+.informationContainer .informationContainer__right .informationContainer__title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
   color: white;
+  line-height: 1;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -279,7 +418,24 @@
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
+  .project {
+    margin: 5px 5px 30px 5px !important;
+    width: 350px !important;
+    height: 203px !important;
+  }
+  .spotlightTitle {
+    font-size: 21px;
+  }
+  .project__desc {
+    font-size: 13px;
+  }
+  .project__title {
+    font-size: 16px;
+  }
+  .callToAction {
+    width: 90% !important;
+  }
   .informationContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -303,14 +459,50 @@
   .step p {
     font-size: 12px;
   }
+  .tech {
+    width: 47% !important;
+    padding: 0 2%;
+  }
+  .tech p {
+    font-size: 12px;
+  }
+  .tech img {
+    width: 20px !important;
+  }
   .informationContainer__title {
     margin-top: 5px;
+  }
+  .hero h1 {
+    font-size: 3em;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .spotlightTitle {
-    font-size: 20px;
+  .comparisonWriting {
+    padding: 0 2%;
+    padding-bottom: 50px;
+  }
+  .comparisonWriting h3 {
+    font-size: 21px !important;
+    margin-bottom: 10px;
+  }
+  .comparisonWriting p {
+    font-size: 16px !important;
+  }
+  .informationContainer__title {
+    font-size: 21px !important;
+  }
+  .nextSteps__title {
+    font-size: 21px !important;
+  }
+  .hero {
+    padding-top: 8vh;
+  }
+  .hero .callToAction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=index.css.map */

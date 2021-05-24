@@ -33,7 +33,7 @@ const projectInformation = [
   },
 ];
 
-projectInformation.forEach((element) => {
+/* projectInformation.forEach((element) => {
   const { title, desc, img, github, live } = element;
 
   const HTML = `<div
@@ -59,3 +59,4 @@ projectInformation.forEach((element) => {
 
   mainContainer.insertAdjacentHTML('beforeend', HTML);
 });
+ */
