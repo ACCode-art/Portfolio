@@ -7,6 +7,7 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/index.css" />
     <title>ACCode Spotlight</title>
   </head>
@@ -49,7 +50,7 @@
           voluptatibus vel sed vero maxime neque earum! Voluptas eum error sint
         </p>
       </div>
-      <div class="informationContainer">
+      <div class="informationContainer" data-aos="fade-up">
         <div class="informationContainer__left">
           <img src="./src/full-stack-sounds-of-serenity-main.jpg" alt="" />
         </div>
@@ -64,7 +65,7 @@
           </p>
         </div>
       </div>
-      <div class="informationContainer">
+      <div class="informationContainer" data-aos="fade-up">
         <div class="informationContainer__left">
           <img src="./src/full-stack-sounds-of-serenity-login.jpg" alt="" />
         </div>
@@ -78,7 +79,7 @@
           </p>
         </div>
       </div>
-      <div class="informationContainer">
+      <div class="informationContainer" data-aos="fade-up">
         <div class="informationContainer__left">
           <img src="./src/full-stack-sounds-of-serenity-player.jpg" alt="" />
         </div>
@@ -92,7 +93,7 @@
           </p>
         </div>
       </div>
-      <div class="informationContainer">
+      <div class="informationContainer" data-aos="fade-up">
         <div class="informationContainer__left">
           <img
             src="./src/full-stack-sounds-of-serenity-collection.jpg"
@@ -109,7 +110,7 @@
           </p>
         </div>
       </div>
-      <div class="informationContainer">
+      <div class="informationContainer" data-aos="fade-up">
         <div class="informationContainer__left">
           <img src="./src/full-stack-sounds-of-serenity-mobile.jpg" alt="" />
         </div>
@@ -176,6 +177,11 @@
         </div>
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 600, offset: 200 });
+    </script>
 
     <script src="/index.js"></script>
   </body>
