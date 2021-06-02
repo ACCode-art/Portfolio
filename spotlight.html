@@ -49,23 +49,23 @@
             sections are automatically updated with the four newest to not
             overwhelm the user when they log in. As I develop the app to contain
             more music, I will add a new page which will contain all the
-            collections which will be searched for by the user.
+            collections which will be searched for by the user. <br /><br />Only
+            users with a valid accout can acesss this page. A user without an
+            account will be redirected to the login Page.
           </p>
         </div>
       </div>
       <div class="informationContainer" data-aos="fade-up">
         <div class="informationContainer__left">
-          <img src="./src/full-stack-sounds-of-serenity-login.jpg" alt="" />
+          <img src="./src/full-stack-sounds-of-serenity-login.jpg.png" alt="" />
         </div>
         <div class="informationContainer__right">
           <p class="informationContainer__title">Login Page</p>
           <p class="informationContainer__desc">
-            At the moment, a user can make an account, and their information is
-            stored on a Mongo database. The next step of this process is to
-            allow a user to log in safely and be redirected to the main page.
-            For this functionality, I am going to use NPM packages such as
-            Hapi/joi, for the validation, bcrypt, to encrypt passwords and JWT
-            to monitor if the user is allowed to access certain pages.
+            A user can make an account and log in safely, with their information
+            is stored on a Mongo database. Passwords on the mongoDB are
+            encrypted to provide a high level of secruity. A user is given a JWT
+            token upion login and can acess the main page.
           </p>
         </div>
       </div>
@@ -103,7 +103,10 @@
       </div>
       <div class="informationContainer" data-aos="fade-up">
         <div class="informationContainer__left">
-          <img src="./src/full-stack-sounds-of-serenity-mobile.jpg" alt="" />
+          <img
+            src="./src/full-stack-sounds-of-serenity-mobile.jpg.png"
+            alt=""
+          />
         </div>
         <div class="informationContainer__right">
           <p class="informationContainer__title">Mobile Responsive</p>
@@ -156,12 +159,8 @@
         <p class="nextSteps__title">Next Steps...</p>
         <div class="stepContainer">
           <div class="step"><p>Add original music</p></div>
-          <div class="step"><p>Redirect to main after login</p></div>
           <div class="step"><p>Responsive on all devices</p></div>
           <div class="step"><p>Users can edit their account</p></div>
-          <div class="step"><p>Implement Redux</p></div>
-          <div class="step"><p>Log in/out functionality</p></div>
-          <div class="step"><p>Encrypt passwords</p></div>
           <div class="step"><p>Liked tracks</p></div>
           <div class="step"><p>Accessibility features</p></div>
         </div>
