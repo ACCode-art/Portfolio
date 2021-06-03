@@ -152,6 +152,21 @@ body {
   background-color: black;
 }
 
+.main .main__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  padding: 0 20px;
+  text-align: center;
+}
+
 .main .spotlight {
   padding: 0 2%;
   margin-bottom: 50px;
