@@ -5,7 +5,7 @@ $font-md: 21px;
 $font-lg: 34px;
 
 * {
-  color: white;
+  color: black;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -30,17 +30,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(251, 251, 251);
 }
 
 .header {
-  z-index: 2;
   height: 78px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.335);
+  backdrop-filter: blur(5px);
   position: fixed;
   width: 100%;
   padding: 0 2%;
-  border-bottom: 1px solid rgb(32, 32, 32);
+
   display: flex;
   align-items: center;
   .header__left {
@@ -96,26 +96,26 @@ body {
       outline: none;
       margin-right: 20px;
       margin-top: 20px;
-
       cursor: pointer;
       transition: 300ms;
       text-decoration: none;
-    }
 
-    a:hover {
-      transform: translateY(-5px);
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
 
     .workingOnProjects {
+      color: white;
       background-color: rgb(1, 116, 136);
     }
 
     .workingOn {
-      background-color: black;
+      border: 1px solid black;
     }
 
     .gitHub {
-      background-color: rgb(0, 0, 0);
+      border: 1px solid black;
     }
   }
 }
@@ -127,7 +127,6 @@ body {
     align-items: center;
     height: 200px;
     padding: 0 20px;
-
     text-align: center;
   }
   .spotlight {
@@ -205,7 +204,6 @@ body {
   height: 1000px;
   margin-bottom: 30px;
   font-size: 80px;
-
   padding: 8vh 2% 0 2%;
   display: flex;
   align-items: center;
@@ -215,6 +213,7 @@ body {
   background-size: cover;
 
   h1 {
+    color: white;
     background-color: rgba(255, 255, 255, 0);
     font-family: 'Cookie', cursive;
     font-weight: 100;
@@ -230,8 +229,13 @@ body {
   .nextSteps {
     padding: 0 2%;
     padding-bottom: 30px;
+
+    .margin-top {
+      margin-top: 40px;
+    }
+
     p {
-      color: white;
+      color: black;
     }
     .tech {
       display: flex;
@@ -239,7 +243,7 @@ body {
       justify-content: center;
       width: 24%;
       height: 60px;
-      background-color: rgb(22, 22, 22);
+      background-color: rgb(207, 207, 207);
       margin-right: 10px;
       margin-bottom: 10px;
       border-radius: 10px;
@@ -255,7 +259,7 @@ body {
       font-size: 25px;
       font-weight: bold;
       margin-bottom: 10px;
-      color: white;
+      color: black;
     }
     .stepContainer {
       display: flex;
@@ -267,7 +271,7 @@ body {
         justify-content: center;
         width: 24%;
         height: 60px;
-        background-color: rgb(22, 22, 22);
+        background-color: rgb(207, 207, 207);
         margin-right: 10px;
         margin-bottom: 10px;
         border-radius: 10px;
@@ -289,13 +293,17 @@ body {
       font-size: 40px;
       margin-bottom: 10px;
     }
+
+    p {
+      color: rgb(24, 24, 24);
+    }
   }
 }
 
 .informationContainer {
   display: flex;
   padding: 25px 0px;
-  border-bottom: 1px solid rgb(31, 31, 31);
+  border-bottom: 1px solid rgb(197, 197, 197);
 
   .informationContainer__technologies {
     margin-top: 10px;
@@ -305,10 +313,14 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: grey;
+      background-color: rgb(148, 148, 148);
       width: 100px;
       border-radius: 25px;
       margin-right: 10px;
+
+      p {
+        color: white;
+      }
     }
   }
 
@@ -325,17 +337,19 @@ body {
         justify-content: center;
         width: 100px;
         height: 40px;
-        border: 1px solid white;
+        border: 1px solid black;
         transition: 300ms;
         margin-right: 10px;
         margin-top: 10px;
 
         &:hover {
           opacity: 0.7;
+          transform: translateY(-5px);
         }
       }
 
       .caseStudy {
+        color: white;
         background-color: rgb(1, 116, 136);
         border: none;
       }
@@ -359,12 +373,12 @@ body {
       font-size: 25px;
       font-weight: bold;
       margin-bottom: 10px;
-      color: white;
+      color: rgb(0, 0, 0);
       line-height: 1;
     }
 
     .informationContainer__desc {
-      color: rgb(158, 158, 158);
+      color: rgb(24, 24, 24);
       padding: 10px 0;
     }
   }

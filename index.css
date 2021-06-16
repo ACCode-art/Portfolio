@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
 * {
-  color: white;
+  color: black;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -26,17 +26,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 body {
-  background-color: black;
+  background-color: #fbfbfb;
 }
 
 .header {
-  z-index: 2;
   height: 78px;
-  background-color: black;
+  background-color: rgba(255, 255, 255, 0.335);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   position: fixed;
   width: 100%;
   padding: 0 2%;
-  border-bottom: 1px solid #202020;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,15 +141,16 @@ body {
 }
 
 .hero .callToAction .workingOnProjects {
+  color: white;
   background-color: #017488;
 }
 
 .hero .callToAction .workingOn {
-  background-color: black;
+  border: 1px solid black;
 }
 
 .hero .callToAction .gitHub {
-  background-color: black;
+  border: 1px solid black;
 }
 
 .main .main__desc {
@@ -286,6 +287,7 @@ body {
 }
 
 .spotlightTitle h1 {
+  color: white;
   background-color: rgba(255, 255, 255, 0);
   font-family: 'Cookie', cursive;
   font-weight: 100;
@@ -301,8 +303,12 @@ body {
   padding-bottom: 30px;
 }
 
+.spotlightMain .nextSteps .margin-top {
+  margin-top: 40px;
+}
+
 .spotlightMain .nextSteps p {
-  color: white;
+  color: black;
 }
 
 .spotlightMain .nextSteps .tech {
@@ -317,7 +323,7 @@ body {
           justify-content: center;
   width: 24%;
   height: 60px;
-  background-color: #161616;
+  background-color: #cfcfcf;
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -333,7 +339,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: white;
+  color: black;
 }
 
 .spotlightMain .nextSteps .stepContainer {
@@ -356,7 +362,7 @@ body {
           justify-content: center;
   width: 24%;
   height: 60px;
-  background-color: #161616;
+  background-color: #cfcfcf;
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -378,12 +384,16 @@ body {
   margin-bottom: 10px;
 }
 
+.spotlightMain .comparisonWriting p {
+  color: #181818;
+}
+
 .informationContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 25px 0px;
-  border-bottom: 1px solid #1f1f1f;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .informationContainer .informationContainer__technologies {
@@ -405,10 +415,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: grey;
+  background-color: #949494;
   width: 100px;
   border-radius: 25px;
   margin-right: 10px;
+}
+
+.informationContainer .informationContainer__technologies .informationContainer__techs p {
+  color: white;
 }
 
 .informationContainer .informationContainer__links {
@@ -436,7 +450,7 @@ body {
           justify-content: center;
   width: 100px;
   height: 40px;
-  border: 1px solid white;
+  border: 1px solid black;
   -webkit-transition: 300ms;
   transition: 300ms;
   margin-right: 10px;
@@ -445,9 +459,12 @@ body {
 
 .informationContainer .informationContainer__links a .informationContainer__link:hover {
   opacity: 0.7;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .informationContainer .informationContainer__links a .caseStudy {
+  color: white;
   background-color: #017488;
   border: none;
 }
@@ -475,12 +492,12 @@ body {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: white;
+  color: black;
   line-height: 1;
 }
 
 .informationContainer .informationContainer__right .informationContainer__desc {
-  color: #9e9e9e;
+  color: #181818;
   padding: 10px 0;
 }
 
