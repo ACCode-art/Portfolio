@@ -8,196 +8,43 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     </style>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="shortcut icon" type="image/png" href="./src/ACCodeLogo.png" />
+    <link rel="stylesheet" href="index.css" />
     <title>ACCode</title>
   </head>
   <body>
-    <div class="header">
-      <div class="header__left">
-        <a href="/index.html">
-          <img src="/src/ACCodeLogo.png" alt="" />
-        </a>
-      </div>
-      <div class="header__right"></div>
+    <div class="menu">
+      <a href="/projects.html"> <p class="menu__item">Projects</p></a>
+      <a href="/blog.html"> <p class="menu__item">Dev Blog</p></a>
+      <a href="https://github.com/ACCode-art" target="_blank">
+        <p class="menu__item">GitHub</p></a
+      >
+      <a
+        href="https://www.linkedin.com/in/adam-cooke-2b9502216/"
+        target="_blank"
+        ><p class="menu__item">LinkedIn</p></a
+      >
     </div>
-    <div class="hero">
-      <h1>{ AC Code Portfolio }</h1>
-      <div class="callToAction">
-        <a href="#quicklink-projects" class="workingOn">Projects</a>
-        <a href="https://github.com/ACCode-art" target="_blank" class="gitHub"
-          >GitHub</a
+    <div class="navbar">
+      <a href="./index.html">
+        <img class="logo" src="./src/ACCodeLogo.png" alt=""
+      /></a>
+      <img class="menu-icon" src="./src/menu.png" alt="" />
+    </div>
+
+    <div class="homePage">
+      <p class="homePage__title">Hello, I'm Adam</p>
+      <p class="homePage__subTitle">Front-End Developer</p>
+      <div class="button__container">
+        <a href="./projects.html"
+          ><p class="projects__button btn">See Projects</p></a
         >
-        <a href="/spotlight.html" class="workingOnProjects">Working On</a>
+        <a href="https://github.com/ACCode-art" target="_blank"
+          ><p class="projects__button btn">GitHub</p></a
+        >
       </div>
     </div>
-    <div class="main">
-      <div class="main__desc">
-        <p>
-          Below are a selection of projects I have created to showcase my skills
-          and document my progression as a software developer
-        </p>
-      </div>
 
-      <div class="spotlight" id="quicklink-projects">
-        <div class="informationContainer" data-aos="fade-up">
-          <div class="informationContainer__left">
-            <img src="./src/sounds-of-serenity.jpg" alt="" />
-          </div>
-          <div class="informationContainer__right">
-            <p class="informationContainer__title">Sounds of Serenity</p>
-            <p class="informationContainer__desc">
-              A music app for meditation. I am in the process of building
-              full-stack version of this website. To find out more, click the
-              case study button below
-            </p>
-            <div class="informationContainer__technologies">
-              <div class="informationContainer__techs"><p>React</p></div>
-            </div>
-            <div class="informationContainer__links">
-              <a href="https://soundsofserenity.netlify.app/" target="_blank">
-                <div class="informationContainer__link">Live Demo</div>
-              </a>
-              <a
-                href="https://github.com/ACCode-art/Sounds-Of-Serenity"
-                target="_blank"
-              >
-                <div class="informationContainer__link">GitHub</div>
-              </a>
-              <a href="/spotlight.html">
-                <div class="informationContainer__link caseStudy">
-                  Case Study
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="informationContainer" data-aos="fade-up">
-          <div class="informationContainer__left">
-            <img src="./src/movie-data.jpg" alt="" />
-          </div>
-          <div class="informationContainer__right">
-            <p class="informationContainer__title">M[]vieData</p>
-            <p class="informationContainer__desc">
-              A project created to help users find a movie to watch based upon
-              ratings. offers users a slection from netflix, all time and
-              trending
-            </p>
-            <div class="informationContainer__technologies">
-              <div class="informationContainer__techs"><p>React</p></div>
-              <div class="informationContainer__techs"><p>TMDB API</p></div>
-            </div>
-            <div class="informationContainer__links">
-              <a href="https://movie-app-243e1.web.app/netflix" target="_blank">
-                <div class="informationContainer__link">Live Demo</div>
-              </a>
-              <a
-                href="https://github.com/ACCode-art/movie-database"
-                target="_blank"
-              >
-                <div class="informationContainer__link">GitHub</div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="informationContainer" data-aos="fade-up">
-          <div class="informationContainer__left">
-            <img src="./src/MinimilstInvoice.png" alt="" />
-          </div>
-          <div class="informationContainer__right">
-            <p class="informationContainer__title">Minimilist Invoice</p>
-            <p class="informationContainer__desc">
-              Users can quickly create an invoice for any need with it's simple
-              four step process!
-            </p>
-            <div class="informationContainer__technologies">
-              <div class="informationContainer__techs"><p>HTML5</p></div>
-              <div class="informationContainer__techs"><p>CSS3</p></div>
-              <div class="informationContainer__techs"><p>Javascript</p></div>
-              <div class="informationContainer__techs"><p>Webpack</p></div>
-            </div>
-            <div class="informationContainer__links">
-              <a href="https://minimilistinvoice.netlify.app/" target="_blank">
-                <div class="informationContainer__link">Live Demo</div>
-              </a>
-              <a
-                href="https://github.com/ACCode-art/MinimilstInvoice"
-                target="_blank"
-              >
-                <div class="informationContainer__link">GitHub</div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="informationContainer" data-aos="fade-up">
-          <div class="informationContainer__left">
-            <img src="./src/quick-guide-gif.gif" alt="" />
-          </div>
-          <div class="informationContainer__right">
-            <p class="informationContainer__title">Abstract-Art.io</p>
-            <p class="informationContainer__desc">
-              A user can Log in with different different users and buy faux art.
-              Current worth of users portfolio and account balance changes upon
-              transactions. Users can also deposit funds into their account.
-            </p>
-            <div class="informationContainer__technologies">
-              <div class="informationContainer__techs"><p>HTML5</p></div>
-              <div class="informationContainer__techs"><p>CSS3</p></div>
-              <div class="informationContainer__techs"><p>Javascript</p></div>
-            </div>
-            <div class="informationContainer__links">
-              <a href="https://abstractartio.netlify.app/" target="_blank">
-                <div class="informationContainer__link">Live Demo</div>
-              </a>
-              <a
-                href="https://github.com/ACCode-art/AbstractArt.io"
-                target="_blank"
-              >
-                <div class="informationContainer__link">GitHub</div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="informationContainer" data-aos="fade-up">
-          <div class="informationContainer__left">
-            <img src="./src/youtube-desktop-clone.jpg" alt="" />
-          </div>
-          <div class="informationContainer__right">
-            <p class="informationContainer__title">Youtube Desktop</p>
-            <p class="informationContainer__desc">
-              A project to showcase my ability to build to a design and notice
-              the smaller details of responsive design.
-            </p>
-            <div class="informationContainer__technologies">
-              <div class="informationContainer__techs"><p>HTML5</p></div>
-              <div class="informationContainer__techs"><p>CSS3</p></div>
-              <div class="informationContainer__techs"><p>Javascript</p></div>
-            </div>
-            <div class="informationContainer__links">
-              <a
-                href="https://youtube-desktop-clone.netlify.app/"
-                target="_blank"
-              >
-                <div class="informationContainer__link">Live Demo</div>
-              </a>
-              <a
-                href="https://github.com/ACCode-art/youtube-desktop-clone"
-                target="_blank"
-              >
-                <div class="informationContainer__link">GitHub</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mainContainer"></div>
-    </div>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ duration: 600, offset: 200 });
-    </script>
-    <script src="/index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
