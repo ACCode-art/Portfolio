@@ -14,10 +14,10 @@ const blog__container = document.querySelector('.blog__container');
 const object = [
   {
     blogTitle: 'Blog 1',
-    img: 'https://images.pexels.com/photos/5210001/pexels-photo-5210001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
+    img: '../src/sundown.png',
     blogDate: '30/08/2021',
     description:
-      'Today, I worked on refactoring the level breakpoints for the game I am working on called "pixelliegence". Instead of creating a long swtich statement which checks the save state and then simply changes the level of the player each time the function is run, I made a small function that compares the level of the player to its index in the level array. In doing this it made the code much simplier to read and around 150 lines shorter.',
+      'Today, I worked on refactoring the "check level" function for the game I am working on called "Pixelliegence". Instead of creating a long switch statement that would check the players experience, compare that against level breakpoints and change the player level accordingly, instead, I made a small function that compares the level of the player to its index in the level array, and if the experience is met increases the players level. In doing this, it made the code much simpler to read and significantly shorter. Below is a picture of some concept art for the game.',
   },
 ];
 
