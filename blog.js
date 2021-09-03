@@ -19,6 +19,13 @@ const object = [
     description:
       'Today, I worked on refactoring the "check level" function for the game I am working on called "Pixelliegence". Instead of creating a long switch statement that would check the players experience, compare that against level breakpoints and change the player level accordingly, instead, I made a small function that compares the level of the player to its index in the level array, and if the experience is met increases the players level. In doing this, it made the code much simpler to read and significantly shorter. Below is a picture of some concept art for the game.',
   },
+  {
+    blogTitle: 'Blog 2',
+    img: '../src/blog-2.gif',
+    blogDate: '3/09/2021',
+    description:
+      'I jumped into Phaser.js for the first time. After watching a few tutorials, I made this rough draft using game assets I created in photoshop.',
+  },
 ];
 
 menuIcon.addEventListener('click', () => {
@@ -81,7 +88,7 @@ function getALlBlogs() {
     </div>
   </div>`;
 
-    blog__container.insertAdjacentHTML('beforeend', HTML);
+    blog__container.insertAdjacentHTML('afterbegin', HTML);
   }
 }
 
