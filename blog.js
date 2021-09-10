@@ -26,6 +26,12 @@ const object = [
     description:
       'I jumped into Phaser.js for the first time. After watching a few tutorials, I made this rough draft using game assets I created in photoshop.',
   },
+  {
+    blogTitle: 'Blog 3',
+    img: '../src/first-kaboom-game.gif',
+    blogDate: '9/09/2021',
+    description: `After spending some time on phaser.js, I came across another Javascript library called 'Kaboom', I enjoyed using this more than Phaser.js and will be using it to create my game for the 'vimjam2' competition as seen on itch.io. Below is an example of the game I made today following a tutorial to help me understand Kaboom`,
+  },
 ];
 
 menuIcon.addEventListener('click', () => {
