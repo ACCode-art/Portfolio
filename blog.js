@@ -32,6 +32,12 @@ const object = [
     blogDate: '9/09/2021',
     description: `After spending some time on phaser.js, I came across another Javascript library called 'Kaboom', I enjoyed using this more than Phaser.js and will be using it to create my game for the 'vimjam2' competition as seen on itch.io. Below is an example of the game I made today following a tutorial to help me understand Kaboom`,
   },
+  {
+    blogTitle: 'Blog 4',
+    img: '../src/vue-pokemon.png',
+    blogDate: '23/09/2021',
+    description: `Having heard good things about Vue.js. I decided to use my pokemon card API to create a simple site that allows the user see cards from different sets. The site can be seen here https://vue-pokemon-site.netlify.app/. I have also made the same website in vanilla JS and tailwind, which can be viewed here https://pokemon-site-example.netlify.app/ `,
+  },
 ];
 
 menuIcon.addEventListener('click', () => {
