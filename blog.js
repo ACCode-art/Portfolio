@@ -38,6 +38,12 @@ const object = [
     blogDate: '23/09/2021',
     description: `Having heard good things about Vue.js. I decided to use my pokemon card API to create a simple site that allows the user see cards from different sets. The site can be seen here https://vue-pokemon-site.netlify.app/. I have also made the same website in vanilla JS and tailwind, which can be viewed here https://pokemon-site-example.netlify.app/ `,
   },
+  {
+    blogTitle: 'Blog 5',
+    img: '../src/vue-pokemon.png',
+    blogDate: '27/09/2021',
+    description: `After making my Pokémon app in Vue.js, I wanted to learn more about vuex (Vue's state management pattern and library). After reading the docs and watching a few tutorials, I began to implement vuex into the app so it can read and manipulate the state from any component. I am hoping to develop this app further so it can be used as a deck builder and tracker in the future.`,
+  },
 ];
 
 menuIcon.addEventListener('click', () => {
