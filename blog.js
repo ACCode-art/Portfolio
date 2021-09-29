@@ -44,6 +44,13 @@ const object = [
     blogDate: '27/09/2021',
     description: `After making my Pokémon app in Vue.js, I wanted to learn more about vuex (Vue's state management pattern and library). After reading the docs and watching a few tutorials, I began to implement vuex into the app so it can read and manipulate the state from any component. I am hoping to develop this app further so it can be used as a deck builder and tracker in the future.`,
   },
+  {
+    blogTitle: 'Blog 6',
+    img: '../src/key_values.png',
+    blogDate: '29/09/2021',
+    description: `Continued to work on the Pokémon app today, still familiarising myself with vuex and mutations. Also added functionality that allows the user to quickly search for different sets. 
+    Came across a really good tip for making search functionality more performant if you are regularly searching through large arrays. This is done by creating a new object that contains key-value pairs which can accessed using bracket notation. Pretty Cool!!! (see below)`,
+  },
 ];
 
 menuIcon.addEventListener('click', () => {
