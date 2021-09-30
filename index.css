@@ -346,7 +346,7 @@ body {
 }
 
 .blog .blog__img {
-  width: 500px;
+  width: 100%;
 }
 
 .full-page {
