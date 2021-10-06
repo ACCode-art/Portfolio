@@ -57,6 +57,12 @@ const object = [
     blogDate: '30/09/2021',
     description: `Another day working on my Pokémon deck building app. As many players remember the number of Pokémon cards, the user now can now search for cards by both name and number. I started to implement the feature that allows the user to add cards to a deck. The information is saved correctly, but upon page refresh, the information is lost. In the future, I will use local storage to store this information so the user can close the page and return to it when needed. For the code that is working as intended, I have also started to make reusable components. The new 'message' component gives the user a success message when a Pokémon is added to a deck. This component will also be used for other types of information in the future such as notifying users they have created a new deck.`,
   },
+  {
+    blogTitle: 'Blog 8',
+    img: '../src/call-array.png',
+    blogDate: '6/10/2021',
+    description: `I learnt A cool performance tip today. instead of splitting an string to then use array methods on it, you can call the method directly and pass the string in as seen below`,
+  },
 ];
 
 menuIcon.addEventListener('click', () => {
